@@ -16,21 +16,21 @@ JSONPointer
 
 A RFC6901 compliant JSON Pointer PHP implementation
 
-#License
+# License
 JSONPointer is licensed under the MIT license.
 
-#Installation
+# Installation
 
     composer require gamringer/php-json-pointer
 
-##Tests
+## Tests
 
     composer install
     phpunit
     
-#Documentation
+# Documentation
 
-##Testing a value for existence
+## Testing a value for existence
 ```php
 <?php
 
@@ -69,7 +69,7 @@ bool(false)
 */
 ```
 
-##Retrieving a value
+## Retrieving a value
 ```php
 <?php
 
@@ -113,7 +113,7 @@ Throws gamringer\JSONPointer\Exception
 */
 ```
 
-##Inserting a value
+## Inserting a value
 Inserting a value will returns a VoidValue object if used on an indexed array.
 
 ```php
@@ -180,7 +180,7 @@ string(5) "waldo"
 */
 ```
 
-##Setting a value
+## Setting a value
 Setting a value returns the content previously at that path
 
 ```php
@@ -239,7 +239,7 @@ class gamringer\JSONPointer\VoidValue#6 (2) {
 */
 ```
 
-##Remove a value
+## Remove a value
 Removing a value returns the content previously at that path
 
 ```php
@@ -280,7 +280,7 @@ Throws gamringer\JSONPointer\Exception
 */
 ```
 
-##Operations affect the original object
+## Operations affect the original object
 This affects Remove Operations
 ```php
 <?php
